@@ -73,5 +73,6 @@ RETOFINAL/
 └── storageState.json
 Reportes HTML
 Se genera un reporte en playwright-report/ accesible en el navegador.
+
 Autor
 Ing. Elber Alexander Ponguta Fernandez
