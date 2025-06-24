@@ -1,47 +1,73 @@
-Automatización de una Mini Aplicación E-commerce - E2E con Playwright
-Descripción del Proyecto
-Este proyecto tiene como objetivo automatizar los flujos End-to-End (E2E) de la aplicación SauceDemo utilizando Playwright. Se aplican buenas prácticas de automatización, incluyendo el uso de Page Object Model (POM), fixtures, hooks y generación de reportes.
-¿Qué es Playwright?
-Playwright es un framework de automatización de pruebas desarrollado por Microsoft que permite la prueba de aplicaciones web en múltiples navegadores como Chrome, Firefox y Safari. Soporta pruebas en paralelo, ejecución en modo headless y generación de trazas para depuración.
-Configuración del Proyecto
-Primeros pasos, instalación de dependencias
-Para ejecutar este proyecto es necesario que luego de descargar la carpeta que lo contiene y abrirla con la ayuda de Visual Studio Code, habras la consola y ejecutes los siguientes comandos para poder instalar las dependencias necesarias para poder ejecutar los test que contiene, para ello el primer comando a ejecutar es:
-1.	npm init playwright@latest
- 
-2.	Seleccionar TypeScript ya que esta desarrollado en este lenguaje.
- 
 
-3.	A continuación, en la pregunta escribes “test”, porque así se llama la carpeta donde están los test a ejecutar, puedes verlo en la estructura del proyecto.
- 
-4.	Luego te pedirá que, si quieres agregarlo a github, le escribes “false” y presionas “enter”.
- 
-5.	Luego te pedirá que, si quieres instalar los navegadores, así que le escribes “true” y presión as “enter”.
- 
+# Automatización de una Mini Aplicación E-commerce - E2E con Playwright
 
-6.	Luego saldrá que si deseo sobre Escribir la carpeta le decimos que no y presionamos “enter”.
- 
-7.	Se descargan e instalan los paquetes y queda listo para poder correr los tests.
-8.	Corro los test.
- 
+## Descripción del Proyecto
 
+Este proyecto tiene como objetivo automatizar los flujos End-to-End (E2E) de la aplicación SauceDemo utilizando Playwright.  
+Se aplican buenas prácticas de automatización, incluyendo el uso de Page Object Model (POM), fixtures, hooks y generación de reportes.
 
-Uso
-Para ejecutar todas las pruebas:
+---
+
+## ¿Qué es Playwright?
+
+Playwright es un framework de automatización de pruebas desarrollado por Microsoft que permite la prueba de aplicaciones web en múltiples navegadores como Chrome, Firefox y Safari.  
+Soporta pruebas en paralelo, ejecución en modo headless y generación de trazas para depuración.
+
+---
+
+## Configuración del Proyecto
+
+### Primeros pasos e instalación de dependencias
+
+Para ejecutar este proyecto:
+
+1. Descarga la carpeta del repositorio y ábrela en **Visual Studio Code**.
+2. Abre la consola y ejecuta:
+
+   ```bash
+   npm init playwright@latest
+   ```
+
+3. Selecciona **TypeScript** cuando se te pregunte el tipo de proyecto.
+4. Escribe `test` como nombre de la carpeta donde están las pruebas (según la estructura del proyecto).
+5. A la pregunta sobre agregarlo a GitHub, responde `false`.
+6. A la pregunta sobre instalar navegadores, responde `true`.
+7. Cuando pregunte si deseas sobrescribir la carpeta, responde `no`.
+8. Se instalarán los paquetes necesarios y el entorno estará listo.
+
+---
+
+## Uso
+
+### Ejecutar todas las pruebas:
+
+```bash
 npx playwright test
+```
 
-Para ejecutar una prueba específica, por ejemplo, login:
+### Ejecutar una prueba específica (por ejemplo, login):
+
+```bash
 npx playwright test tests/specs/login.spec.ts
-Características
+```
+
+---
+
+## Características
+
 - Automatización E2E
 - Validaciones dinámicas
 - Uso de fixtures personalizados
-- Hooks beforeEach y afterEach
+- Hooks `beforeEach` y `afterEach`
 - Soporte para múltiples navegadores (Chromium, Firefox)
 - Capturas automáticas al fallar
 - Generación de reportes HTML
 
+---
 
-Estructura del Proyecto
+## Estructura del Proyecto
+
+```
 RETOFINAL/
 ├── node_modules/
 ├── playwright-report/
@@ -71,7 +97,16 @@ RETOFINAL/
 ├── package.json
 ├── playwright.config.ts
 └── storageState.json
-Reportes HTML
-Se genera un reporte en playwright-report/ accesible en el navegador.
-Autor
-Ing. Elber Alexander Ponguta Fernandez
+```
+
+---
+
+## Reportes HTML
+
+Se genera un reporte en la carpeta `playwright-report/` accesible desde el navegador abriendo `index.html`.
+
+---
+
+## Autor
+
+**Ing. Elber Alexander Ponguta Fernandez**
