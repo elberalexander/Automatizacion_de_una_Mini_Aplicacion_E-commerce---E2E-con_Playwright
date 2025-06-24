@@ -97,6 +97,7 @@ RETOFINAL/
 ├── package.json
 ├── playwright.config.ts
 └── storageState.json
+<<<<<<< HEAD
 ```
 
 ---
@@ -110,3 +111,6 @@ Se genera un reporte en la carpeta `playwright-report/` accesible desde el naveg
 ## Autor
 
 **Ing. Elber Alexander Ponguta Fernandez**
+=======
+Reportes HTML
+
